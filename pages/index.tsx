@@ -9,7 +9,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main> <h3> Create Next App</h3></main>
+      <main> <h3> Create Next App ghhh</h3></main>
     </>
   )
 }
