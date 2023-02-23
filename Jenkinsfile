@@ -7,14 +7,14 @@ pipeline {
             }
         }
 
-        //   stage('Build') {
-        //     steps {
-        //         withDockerRegistry(credentialsId: 'docker-hub-1', url: 'https://index.docker.io') {
-        //             sh 'docker build -t my-app .'
-        //             sh 'docker push my-app'
-        //         }
-        //     }
-        // }
+          stage('Build') {
+            steps {
+                withDockerRegistry(credentialsId: 'docker-hub-1', url: 'https://index.docker.io') {
+                    sh 'docker build -t my-app .'
+                    sh 'docker push my-app'
+                }
+            }
+        }
     
     }
 }
